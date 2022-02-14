@@ -1,0 +1,15 @@
+<%= console %>
+
+<div class="questiondiv">
+    <%= params[:question] %>
+<p> "- You"</p>
+</div>
+
+<div class="answerdiv">
+  <%= @answer %>
+  <p> "- Your coach"</p>
+</div>
+
+<%= link_to ask_path do %>
+  <div class="button"> Ask a new question </div>
+<% end %>
